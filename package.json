@@ -4,7 +4,7 @@
   "description": "FastMail AppImage",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "dist": "electron-builder"
   },
   "build": {
     "appId": "org.mtod.fastmail"
@@ -16,6 +16,7 @@
   "author": "Adam Rutkowski <hq@mtod.org>",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^1.8.4",
+    "electron-builder": "^20.8.0"
   }
 }
