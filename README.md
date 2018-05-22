@@ -1,6 +1,8 @@
 # Fastmail
 
-Works on Solus; requires npm and yarn
+requires npm and yarn
+
+Tested on Solus 3.999 and Fedora 28
 
 ```
 make
