@@ -4,6 +4,7 @@
  - Requires npm and yarn
  - Not yet in AUR
  - `make` generates pacman archive with desktop entry
+ - I have no clue why does it want mono and gtk for pacman dist target
 
 ```
 (yharnam) master-* ~/dev/fastmail-appimage $ make
