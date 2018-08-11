@@ -1,12 +1,12 @@
-.PHONY = electron-builder release
+.PHONY = electron-builder
+
+all: electron-builder node_modules dist
 
 electron-builder:
 	yarn add electron-builder --dev
 
 node_modules:
 	npm install
-
-all: electron-builder node_modules
 
 clean:
 	rm -rf dist
