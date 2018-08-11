@@ -7,7 +7,15 @@
     "dist": "electron-builder"
   },
   "build": {
-    "appId": "org.mtod.fastmail"
+    "appId": "org.mtod.fastmail",
+    "linux": {
+      "category": "Network",
+      "icon": "FastMail.png",
+      "target": [
+        "AppImage",
+        "pacman"
+      ]
+    }
   },
   "repository": "https://github.com/aerosol/fastmail-appimage",
   "keywords": [
@@ -17,6 +25,6 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4",
-    "electron-builder": "^20.14.7"
+    "electron-builder": "^20.27.1"
   }
 }
