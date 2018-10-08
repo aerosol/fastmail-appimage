@@ -10,18 +10,18 @@
     <webview id="fastmail" src="https://fastmail.com" style="height:100%;width:100%;position:absolute;"></webview>
   </body>
   <script>
-    let w = document.getElementById('fastmail')
-let shell = require('electron').shell
+  let w = document.getElementById('fastmail')
+  let shell = require('electron').shell
 
-w.addEventListener('did-finish-load', function(event) {
-  w.setZoomLevel(1.4)
-})
+  w.addEventListener('did-finish-load', function(event) {
+    w.setZoomLevel(1.4)
+  })
 
-w.addEventListener('new-window', function (event) {
-  if (event.url.startsWith('http')) {
-    event.preventDefault()
-    shell.openExternal(event.url)
-  }
-})
+  w.addEventListener('new-window', function (event) {
+    if (event.url.startsWith('http')) {
+      event.preventDefault()
+      shell.openExternal(event.url)
+    }
+  })
   </script>
 </html>
